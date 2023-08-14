@@ -1,3 +1,2 @@
-
-rootProject.name = "keycloak-playground"
+rootProject.name = "keycloak-jakarta-issue-sample"
 

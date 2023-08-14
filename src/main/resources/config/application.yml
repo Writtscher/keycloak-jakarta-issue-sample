@@ -9,3 +9,25 @@ spring:
   h2:
     console:
       enabled: true
+
+
+
+      I can provide a simple repository to test. The project setup is very minimalistic but it does not work
+
+      https://github.com/Writtscher/keycloak-jakarta-issue-sample/tree/main
+
+      When I import / reload the gradle project to update the dependencies I get the error:
+
+      ```
+      * Exception is:
+      com.intellij.openapi.externalSystem.model.ExternalSystemException: Could not find jackson-jaxrs-base-2.15.2-jakarta.jar (com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.15.2).
+      Searched in the following locations:
+        https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.15.2/jackson-jaxrs-base-2.15.2-jakarta.jar
+        at org.jetbrains.plugins.gradle.model.ProjectImportAction.addBuildModels(ProjectImportAction.java:439)
+        at org.jetbrains.plugins.gradle.model.ProjectImportAction.execute(ProjectImportAction.java:139)
+        at org.jetbrains.plugins.gradle.model.ProjectImportAction.execute(ProjectImportAction.java:43)
+        ....
+      org.gradle.internal.resolve.ArtifactNotFoundException: Could not find jackson-jaxrs-base-2.15.2-jakarta.jar (com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.15.2).
+      Searched in the following locations:
+        https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.15.2/jackson-jaxrs-base-2.15.2-jakarta.jar
+      ```

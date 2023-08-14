@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: vpp-account-service
+  datasource:
+    url: jdbc:h2:mem:${spring.application.name};MODE=MYSQL
+    driverClassName: org.h2.Driver
+    username: ${spring.application.name}
+    password:
+  h2:
+    console:
+      enabled: true

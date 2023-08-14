@@ -10,7 +10,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.0"
 }
 
-group = "com.aoe.congo.playground"
+group = "com.playground"
 version = "0.0.1-SNAPSHOT"
 
 repositories {
